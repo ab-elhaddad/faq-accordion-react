@@ -1,0 +1,129 @@
+* {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --purple: hsl(293, 72%, 47%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+  /* overflow: hidden; */
+  font-family: "Work Sans", sans-serif;
+  height: 97vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--dark-purple);
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  height: 100vh;
+  background-color: var(--light-pink);
+}
+
+.container img {
+  width: 100vw;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.07);
+  width: 40%;
+  height: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 1rem 0.5rem 3rem;
+}
+.card-container {
+  width: 90%;
+  height: fit-content;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  width: 13vw;
+  font-size: 1.9vw;
+  font-weight: 700;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 700;
+  height: fit-content;
+  width: 90%;
+  /* border-bottom: solid 3px var(--light-pink); */
+  border-bottom: solid 0.5px black;
+  margin-bottom: 1rem;
+  /* border: solid 3px red; */
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  /* border: 3px solid red; */
+}
+
+.accordion-header img {
+  transition: 0.5s ease;
+}
+
+.accordion-header:hover {
+  color: var(--purple);
+}
+
+.accordion-header:hover img {
+  transform: scale(1.2);
+}
+
+.accordion-answer {
+  font-size: 1vw;
+  display: none;
+  font-weight: 400;
+  color: var(--grayish-purple);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 80%;
+  }
+  .headline {
+    width: 30vw;
+    font-size: 3.5vw;
+  }
+  .accordion-header {
+    font-size: 3vw;
+  }
+  .accordion-header p {
+    width: 25ch;
+  }
+  .accordion-header img {
+    width: 7vw;
+  }
+  .accordion-answer {
+    font-size: 3vw;
+  }
+}
