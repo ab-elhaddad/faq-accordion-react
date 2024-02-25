@@ -7,7 +7,6 @@
 }
 
 body {
-  /* overflow: hidden; */
   font-family: "Work Sans", sans-serif;
   height: 97vh;
   margin: 0;
@@ -69,10 +68,8 @@ body {
   font-weight: 700;
   height: fit-content;
   width: 90%;
-  /* border-bottom: solid 3px var(--light-pink); */
-  border-bottom: solid 0.5px black;
+  border-bottom: solid 3px var(--light-pink);
   margin-bottom: 1rem;
-  /* border: solid 3px red; */
 }
 
 .accordion-header {
@@ -83,7 +80,6 @@ body {
   height: 100%;
   width: 100%;
   font-size: 1vw;
-  /* border: 3px solid red; */
 }
 
 .accordion-header img {
