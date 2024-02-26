@@ -1,6 +1,6 @@
 # FAQs Accordion
 
-This is a simple FAQs accordion component built with React. It is a beginner-friendly project and a good way to learn the basics of React.<br/> The app is a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz).
+This is a simple responsive FAQs accordion component built with React. It is a beginner-friendly project and a good way to learn the basics of React.<br/> The app is a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz).
 
 ## Live Demo
 
